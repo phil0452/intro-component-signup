@@ -1,0 +1,92 @@
+@media only screen and (max-width : 1030px) { 
+	section .column #form-controls {
+		max-width: 390px;
+	}
+	
+	section .column form span {
+		padding: 10px 30px;
+	}
+}
+
+@media only screen and (max-width : 870px) { 
+	section .column #form-controls {
+		max-width: 320px;
+	}
+	section .column form span {
+		padding: 10px 10px;
+	}
+}
+
+@media only screen and (max-width : 730px) {
+	section {
+		max-width: 550px;
+		text-align: center;
+	}
+	section .column {
+		width: 100%;
+		display: block;
+		float: none;
+	}
+	
+	section .column #form-column {
+		margin: auto;		
+	}
+	
+	section .column #description {
+		margin: auto;
+		margin-top: 190px;
+	}
+}
+
+@media only screen and (max-width : 490px) {
+	section .column #description,
+	section .column #form-column{
+		max-width: 380px;
+	}
+}
+
+@media only screen and (max-width : 375px) {	
+	body{
+		background-image: url('../images/bg-intro-mobile.png');
+	}
+	
+	section .column  {
+		width: 320px;
+		margin: auto;
+	}
+	
+	section .column:first-of-type {
+		height: 290px;
+	}
+	
+	section .column #description{
+		height: 230px;
+		margin-top: 0px;
+	}
+	section .column #description span{	
+		font-size: 32px;
+	}
+	
+	section .column #description p{
+		width: 310px;
+		margin: auto;
+		margin-top: 25px;
+	}
+	
+	section .column #trial-offer p {
+		width: 150px;
+		margin: auto;
+	}	
+	section .column #form-controls {
+		width: 270px;
+	}
+	
+	section .column form span {
+		width: 230px;
+		line-height: 20px;
+	}
+	
+	footer {
+		display: none;
+	}
+}
