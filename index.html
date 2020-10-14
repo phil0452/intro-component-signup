@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600,700' rel='stylesheet'>
   <link rel="stylesheet" href="CSS/styling.css">
   <link rel="stylesheet" href="CSS/styling-responsive.css">
   <title>Frontend Mentor | Intro component with sign up form</title>
@@ -21,7 +21,7 @@
 		<!--descriptions and title container-->
 		<div class="column" id="title">
 			<div id="description">
-				<span>Learn to code by watching others</span>
+				<h1>Learn to code by watching others</h1>
 				<p>
 					See how experienced developers solve problems in real-time. Watching 
 					scripted tutorials is great, but understanding how developers think 
@@ -57,12 +57,12 @@
 						<img src="images/icon-error.png" alt="error icon" class="icon" id="password-image" />
 						<p id="password-message" class="error-message"><em>Password cannot be empty</em></p>
 						
-						<input type="submit" class="whitetext corners" value="Claim your free trial">
-					
-						<span class="corners">
-							By clicking the button, you are agreeing to our <strong>Terms and Services</strong>
-						</span>
+						<input type="submit" class="whitetext corners" value="Claim your free trial">					
 					</div>
+					
+					<p class="corners" id="agree-messge">
+						By clicking the button, you are agreeing to our <strong>Terms and Services</strong>
+					</p>
 				</form>
 			</div>
 		</div>
