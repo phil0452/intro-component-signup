@@ -1,92 +1,45 @@
-@media only screen and (max-width : 1030px) { 
-	section .column #form-controls {
-		max-width: 390px;
-	}
-	
-	section .column form span {
-		padding: 10px 30px;
-	}
-}
-
-@media only screen and (max-width : 870px) { 
-	section .column #form-controls {
-		max-width: 320px;
-	}
-	section .column form span {
-		padding: 10px 10px;
-	}
-}
-
-@media only screen and (max-width : 730px) {
-	section {
-		max-width: 550px;
-		text-align: center;
-	}
+@media only screen and (min-width : 768px) { 
 	section .column {
-		width: 100%;
-		display: block;
-		float: none;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+}
+
+@media only screen and (min-width : 1024px) { 
+	section .column {
+		padding-left: 90px;
+		padding-right: 90px;
+	}
+}
+
+@media only screen and (min-width : 1150px) { 
+	body{
+		background-image: url('../images/bg-intro-desktop.png');
+	}
+
+	section {
+		display: flex;
+		width: 1100px;
+		margin: auto;
+		padding-top: 100px;
 	}
 	
-	section .column #form-column {
-		margin: auto;		
+	section .column {
+		padding: 0;
+		flex: 50%;
+	}
+	
+	section #title {
+		align-self: center;
 	}
 	
 	section .column #description {
-		margin: auto;
-		margin-top: 190px;
+		text-align: left;
 	}
-}
 
-@media only screen and (max-width : 490px) {
-	section .column #description,
-	section .column #form-column{
-		max-width: 380px;
-	}
-}
-
-@media only screen and (max-width : 375px) {	
-	body{
-		background-image: url('../images/bg-intro-mobile.png');
-	}
-	
-	section .column  {
-		width: 320px;
-		margin: auto;
-	}
-	
-	section .column:first-of-type {
-		height: 290px;
-	}
-	
-	section .column #description{
-		height: 230px;
-		margin-top: 0px;
-	}
-	section .column #description span{	
-		font-size: 32px;
-	}
-	
-	section .column #description p{
-		width: 310px;
-		margin: auto;
-		margin-top: 25px;
-	}
-	
-	section .column #trial-offer p {
-		width: 150px;
-		margin: auto;
-	}	
 	section .column #form-controls {
-		width: 270px;
-	}
-	
-	section .column form span {
-		width: 230px;
-		line-height: 20px;
-	}
-	
-	footer {
-		display: none;
+		padding-top: 30px; 
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }

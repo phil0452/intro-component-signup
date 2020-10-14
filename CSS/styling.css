@@ -7,7 +7,7 @@ body{
 }
 
 body{
-	background-image: url('../images/bg-intro-desktop.png');
+	background-image: url('../images/bg-intro-mobile.png');
 	background-color: hsl(0, 100%, 74%);
 }
 
@@ -16,70 +16,49 @@ body{
 }
 
 section{
-	max-width: 1200px;
-	margin: auto;
-	margin-top: 100px;
-	height: 580px;
+	margin-top: 70px;
 }
 
-section .column {
-	width: 49%;
-	display: inline-block;
-	float: left;
-	height: 100%;
+section .column{
+	padding: 15px 25px;
 }
-
-section .column #form-column {
-	max-width: 480px;
-}
-
 section .column #description {
-	max-width: 500px;
-	height: 200px;
-	margin-top: 190px;
+    text-align: center;
 }
-section .column #description span{	
+
+section .column #description h1{	
 	font-weight: 700;
-	font-size: 42px;
-	line-height: 40px;	
-	color: white;
+    font-size: 33px;
+    line-height: 40px;
+    color: white;
 }
 
 section .column #description p{
-	line-height: 22px;
-	display: block;
-	margin-top: 25px;
-	color: hsl(0, 2%, 88%);
-}
-
-section .column #form-column .corners{
-	border-radius: 7px;
+	line-height: 25px;
+    color: hsl(0, 2%, 88%);
 }
 
 section .column #trial-offer {
 	background-color: hsl(248, 32%, 49%);
-	padding: 15px 18px;
+	padding: 5px 49px;
 	text-align: center;
 	font-size: 14px;
 	margin-bottom: 25px;
 	box-shadow: 1px 8px 1px rgb(83, 80, 98, 0.5) ;
 }
 
-section .column #trial-offer p {
-	margin: 0;
+section .column #form-column .corners{
+	border-radius: 7px;
 }
+
 section .column form{
 	background-color: white;
-	max-width: 490px;
-	height: 490px;	
 	box-shadow: 1px 8px 1px rgb(83, 80, 98, 0.5) ;
+	height: 455px;
 }
 
 section .column #form-controls {
-	height: 330px;
-	max-width: 430px;
-	margin: auto;
-	padding-top: 40px;
+	padding: 20px 20px;
 }
 
 section .column form #form-controls input[type=text] {
@@ -108,20 +87,16 @@ section .column #form-controls input[type=submit] {
 	font-weight: 600;
 	box-shadow: 1px 4px 2px hsl(154, 59%, 35%); 
 	cursor: pointer;
+	border: none;
 }
 
 /* error icon */
 section .column #form-controls img {
-	display: block;
-	bottom: 35px;	
 	float: right;
-	padding-right: 25px;
-	margin-top: -35px;
-	clear: both;
-	bottom: 35px;
+    padding-right: 25px;
+    margin-top: -35px;
 }
 
-/* error message */
 section .column #form-controls p {
 	position: relative;
 	float: right;
@@ -131,17 +106,20 @@ section .column #form-controls p {
 	bottom: 10px;
 }
 
-section .column form span {
+section .column form p#agree-messge {
 	font-size: 9px;
-	padding: 10px 60px;
-	display: block;
-	margin-top: 5px;
-	color: hsl(246, 25%, 77%);
+    padding: 0 37px;
+    position: static;
+    margin-top: -5px;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    line-height: 18px;
 }
 
-section .column form span strong {
+section .column form p#agree-messge strong {
 	color: hsl(0, 100%, 74%);
 }
+
 /* styling to be used with javascript */
 /* border color for input type text. cannot have this directly 
 	for input control, due to javascript submit, cannot override css
@@ -169,5 +147,3 @@ section .column form span strong {
 .error-message {
 	visibility: hidden;
 }
-
-
